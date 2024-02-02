@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=IBM+Plex+Sans:wght@100;500&display=swap');
+
+body {
+    background-color: #faf9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  @media (max-width: 620px) {
+    header.container {
+      height: auto;
+    }
+    header.container div.information-search {
+      flex-direction: column;
+      align-items: center;
+    }
+    header.container div.information-search div.logoImage h2 {
+      font-size: 10px; 
+      text-align: center; 
+    }
+    header.container div.information-search div.logoImage img {
+      width: 10px; 
+      height: 10px; 
+    }
+    header.container div.information-search span.search-input {
+      width: 80%; 
+      flex-direction: column;
+      align-items: center;
+    }
+    header.container div.information-search span.search-input input {
+      width: 50%; 
+      margin: 10px 0;
+    }
+    header.container div.information-search span.search-input button.search-button {
+      width: 60%;
+      font-size: 16pt;
+     font-family: 'Dancing Script', cursive;;
+    }
+
+  }
+  
+
+  
+  header.container div.information-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  header.container div.information-search div.logoImage h2 {
+    color: white;
+    margin-left: 5px;
+    margin-bottom: 0;
+    font-size: 28pt;
+    display: inline;
+  }
+  
+  header.container div.information-search div.logoImage {
+    margin-left: 25px;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  header.container div.information-search div.logoImage img {
+    width: 100%;
+    height: 65%;
+  }
+  
+  header.container div.information-search span.search-input {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  header.container div.information-search span.search-input label.label-input {
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+  }
+  
+  header.container div.information-search span.search-input input {
+    border-radius: 5px;
+    margin-right: 8px;
+    height: 2em;
+  }
+  
+  header.container div.information-search span.search-input button.search-button {
+    width: 33%;
+    border-radius: 5px;
+    padding: 10px;
+    background: var(--marrom);
+    color: white;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  div.content-container div.containerImgs {
+    height: 30%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  div.content-container div.answerImages p {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
+  }
+  div.content-container div.containerImgs img {
+    max-width: 60%;
+    max-height: 60%;
+    margin-top: 50px;
+    border-radius: 20px;
+  }
+  div.content-container div.containerImgs img:hover{
+    cursor: pointer;
+    box-shadow: 0 0 15px;
+  }
+  div.content-container div.containerImgs button{
+    margin-bottom: 20px;
+    width: 20%;
+  }
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup-visible {
+    display: block;
+  }

@@ -7,6 +7,9 @@
     height: 120px;
 
 }
+.me-auto h1{
+    font-size: 26pt;
+}
 .me-auto a{
     margin: 10pt;
     text-decoration: none;

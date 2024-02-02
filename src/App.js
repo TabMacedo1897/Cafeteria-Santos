@@ -3,14 +3,16 @@ import React from "react";
 import Formulario from "./components/Formulario/Formulario";
 import AppNavBar from "./components/AppNavBar/AppNavBar";
 import { Button } from "bootstrap";
+import Search from './components/Search/Search'
 
 
 function App() {
   return (
     <div className="App">
       <AppNavBar />
-      <h1>Café Santos</h1>
-      <h2>Bebidas</h2>
+      <div className="container-api">
+        <Search />
+      </div>
 
       <div className="container-bebidas" id="bebidas">
         <div className ='item-bebida'>
@@ -31,8 +33,6 @@ function App() {
           <button>Comprar</button>
         </div>
       </div>
-
-      <h2>Doces</h2>
       <div className="container-doces" id="doces">
        
         <div className='doce-item'>
